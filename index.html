@@ -1,21 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KUNG FU RABBIT</title>
-    <link rel="stylesheet" href="./Styles/estilos.css">
-    <link rel="shortcut icon" href="./img/icono-portada.webp" type="image/x-icon">
+    <title>Kung Fu Rabbit</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Styles/estilos.css">
 </head>
 <body>
-    <div class="laptop-container">
-        <img src="./img/ordenador-portatil.png" alt="Laptop" class="laptop-img">
-        <div class="screen-text">
-            <h1>KUNG</h1>
-            <h1>FU</h1>
-            <h1>RABBIT</h1>
+        <!-- Pantalla de título -->
+        <div class="title-screen">
+            <img class="moon" src="images/moon.png" alt="Luna">
+            <img class="cloud" src="images/cloud.png" alt="Nube">
+            <img class="carrot" src="images/carrot.png" style="left: 20%; animation-delay: 0s;" alt="Zanahoria">
+            <img class="carrot" src="images/carrot.png" style="left: 50%; animation-delay: 2s;" alt="Zanahoria">
+            <img class="carrot" src="images/carrot.png" style="left: 80%; animation-delay: 4s;" alt="Zanahoria">
+            <div class="ground"></div>
+            <img class="hut" src="images/hut.png" alt="Cabaña">
+            <img class="tree" src="images/tree.png" alt="Árbol">
+            <img class="arcade" src="images/arcade.png" alt="Máquina arcade">
+            <div class="title">
+                <h1>KUNG FU RABBIT</h1>
+                <div class="stars">
+                    <img src="images/star.png" alt="Estrella">
+                    <img src="images/star.png" alt="Estrella">
+                    <img src="images/star.png" alt="Estrella">
+                    <img src="images/star.png" alt="Estrella">
+                    <img src="images/star.png" alt="Estrella">
+                </div>
+            </div>
         </div>
-    </div>
-    <script src="./JS/main.js"></script>
+
+        <!-- Pantalla de personajes -->
+        <div class="characters-screen">
+            <div class="GetCharacters-title">
+                <img class="controller" src="images/controller.png" alt="Controlador">
+                <h1>CHARACTERS</h1>
+                <img class="controller" src="images/controller.png">        
+                </div>
+            <div class="hearts">
+                <img src="images/heart.png" alt="Corazón">
+                <img src="images/heart.png" alt="Corazón">
+                <img src="images/heart.png" alt="Corazón">
+                <img src="images/heart.png" alt="Corazón">
+                <img src="images/heart.png" alt="Corazón">
+                <img src="images/heart.png" alt="Corazón">
+            </div>
+            <div class="characters">
+                <div class="character">
+                    <img src="images/pana_rabbit.png" alt="Pana Rabbit">
+                    <p>Pana rabbit</p>
+                </div>
+                <div class="character">
+                    <img src="images/velocifu.png" alt="Velocifu">
+                    <p>Velocifu</p>
+                </div>
+                <div class="character">
+                    <img src="images/maestro_chinfu.png" alt="Maestro Chinfu">
+                    <p>Maestro chinfu</p>
+                </div>
+                <div class="character">
+                    <img src="images/doki.png" alt="Doki">
+                    <p>Doki</p>
+                </div>
+                <div class="character">
+                    <img src="images/rapunzel_ninja.png" alt="Rapunzel Ninja">
+                    <p>Rapunzel ninja</p>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            document.querySelector('.title-screen').addEventListener('click', function() {
+                this.style.display = 'none';
+                document.querySelector('.characters-screen').style.display = 'block';
+            });
+        </script>
 </body>
 </html>
