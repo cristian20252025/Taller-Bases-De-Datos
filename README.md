@@ -169,7 +169,7 @@ A continuación, se presentan los requerimientos funcionales con sus historias d
 
 ---
 
-## ⚙️ Requerimientos No Funcionales
+## Requerimientos No Funcionales
 
 ### RNF01 – Usabilidad
 **Actor:** Estudiante  
@@ -283,24 +283,60 @@ A continuación, se presentan los requerimientos funcionales con sus historias d
 ---
 
 ## Conclusiones
-- Conclusiones generales del documento.  
-- Conclusiones de la reunión de retrospectiva del Sprint.  
+- La construcción de la aplicación web interactiva con cuestionario permitió diseñar un entorno educativo innovador, fácil de usar y adaptado a estudiantes sin conocimientos previos de bases de datos.
+
+- La estructura modular y el desbloqueo progresivo de módulos aseguraron un aprendizaje escalonado y más efectivo.
+
+- La incorporación de elementos dinámicos, retroalimentación inmediata y panel de progreso aumentó el interés y la motivación de los usuarios.
+
+- La metodología ágil utilizada facilitó la comunicación constante y la entrega continua de funcionalidades, mejorando la calidad y el cumplimiento de los objetivos del proyecto.
+
+- El trabajo colaborativo y la documentación constante permiten que el proyecto pueda ampliarse y mantenerse a futuro de forma sencilla.
 
 ---
 
-> **Metodología:**
-Se debe especificar la metodología de desarrollo utilizada (por ejemplo, **Scrum** u otra).  
-- Roles de equipo definidos.  
-- Planificación de sprints y reuniones (planning, daily stand up, retrospectivas).  
-- Definición de tareas y entregables.
+## Metodología:
+- Para el desarrollo del proyecto se adoptó la metodología ágil Scrum, la cual permitió una organización eficiente del trabajo mediante iteraciones y entregas incrementales.
+
+**El equipo se dividió en roles claros:**
+
+> Product Owner: Encargado de priorizar los requerimientos y asegurar que el producto cumpla con las necesidades educativas.
+
+> Scrum Master: Responsable de facilitar las ceremonias, resolver impedimentos y asegurar el cumplimiento de la metodología.
+
+> Equipo de desarrollo: Encargado de implementar los requerimientos funcionales y no funcionales, realizando pruebas continuas y documentando el código.
+
+- Las actividades se gestionaron en sprints semanales, realizando las siguientes ceremonias:
+
+> Sprint Planning: Definición de tareas y alcance semanal.
+
+> Daily Stand Up: Revisión diaria de avances e impedimentos.
+
+> Sprint Review: Presentación de funcionalidades completadas.
+
+> Sprint Retrospective: Análisis de lo que se puede mejorar para el siguiente sprint.
+
+Se utilizó un tablero Scrum digital para gestionar tareas, priorizar historias de usuario y hacer seguimiento de responsabilidades y tiempos. El trabajo colaborativo se respaldó mediante un repositorio con ramas controladas y convencional commits para mantener la calidad del código.
 
 ---
 
 ## Evidencia de planteamiento de plataforma de trabajo
-- **Repositorio:** (agregar link del repositorio con ramas, roles y commits convencionales).  
+- **Repositorio:** (https://github.com/cristian20252025/Taller-Bases-De-Datos)  
 - **Videos de reuniones:** (agregar links de sprint planning, daily stand up, retrospectiva).  
-- **Tablero Scrum:** Capturas de todas las etapas, con tareas, responsables y tiempos.  
+- **Tablero Scrum:** (https://app.clickup.com/90131037410/v/l/7-90131037410-1)  
 - **Documentación:** Tecnologías usadas y cumplimiento de tareas planteadas.
+
+![Aprende.png](./img/Aprende.png)
+
+![Aprende2.png](./img/Aprende2.png)
+
+![Aprende3.png](./img/Aprende3.png)
+
+![Aprende4.png](./img/Aprende4.png)
+
+![Aprende5.png](./img/Aprende5.png)
+
+![Aprende6.png](./img/Aprende6.png)
 
 ---
 
