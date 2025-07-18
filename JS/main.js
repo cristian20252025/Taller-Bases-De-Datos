@@ -194,3 +194,14 @@ function showQuiz() {
         </div>
     `;
 }
+
+  // Función para seleccionar una opción en el quiz
+  function selectOption(selectedElement, questionIndex, optionIndex) {
+    const questionCard = document.getElementById(`question-${questionIndex}`);
+    questionCard.querySelectorAll('.option').forEach(opt => {
+        opt.classList.remove('selected');
+    });
+    
+    selectedElement.classList.add('selected');
+    userAnswers[questionIndex] = optionIndex;
+}
