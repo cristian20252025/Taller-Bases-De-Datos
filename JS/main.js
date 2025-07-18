@@ -109,3 +109,30 @@
          correct: 1
      }
  ];
+
+  // Función para mostrar un nivel específico
+  function showLevel(level) {
+    // Ocultar todos los contenedores de contenido
+    document.querySelectorAll('.level-content').forEach(el => {
+        el.classList.remove('active');
+    });
+
+    // Seleccionar y mostrar el contenedor correcto usando su ID
+    let activeContentId;
+    if (level === 0) {
+        activeContentId = 'welcome';
+    } else if (level === 'quiz') {
+        activeContentId = 'quiz';
+    } else if (level === 'results') {
+        activeContentId = 'quizResults';
+    } else {
+        activeContentId = `level${level}`;
+    }
+    
+    const elementToShow = document.getElementById(activeContentId);
+    if (elementToShow) {
+        elementToShow.classList.add('active');
+    }
+
+    currentLevel = level;
+}
