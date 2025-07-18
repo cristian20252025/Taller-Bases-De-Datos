@@ -136,3 +136,20 @@
 
     currentLevel = level;
 }
+
+// Función para completar un nivel
+function completeLevel(level) {
+    completedLevels.add(level);
+    
+    const progressPercentage = Math.min((completedLevels.size / 4) * 100, 100);
+    document.getElementById('progressFill').style.width = `${progressPercentage}%`;
+    
+    // Habilitar el siguiente botón
+    if (level < 4) {
+        document.querySelector(`.level-btn.level-${level + 1}`).disabled = false;
+        showLevel(level + 1);
+    } else {
+        document.querySelector('.level-btn.quiz').disabled = false;
+        showQuiz();
+    }
+}
