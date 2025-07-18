@@ -153,3 +153,8 @@ function completeLevel(level) {
         showQuiz();
     }
 }
+
+// Función para mostrar el quiz
+function showQuiz() {
+    showLevel('quiz');
+}
