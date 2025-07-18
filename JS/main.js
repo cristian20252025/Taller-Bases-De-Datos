@@ -256,3 +256,8 @@ function showQuiz() {
     
     showLevel('results');
 }
+
+// Inicializar la vista cuando el DOM esté listo
+document.addEventListener('DOMContentLoaded', () => {
+    showLevel(0);
+});
