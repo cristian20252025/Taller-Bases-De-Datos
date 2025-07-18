@@ -236,6 +236,49 @@
                 </div>
             </div>
 
+             <!-- Quiz Final -->
+             <div id="quiz" class="level-content">
+                <div class="level-header">
+                    <h2>🎯 Quiz Final: Evalúa tus Conocimientos</h2>
+                    <p>20 preguntas para demostrar todo lo que has aprendido</p>
+                </div>
+
+                <div class="quiz-container">
+                    <div class="quiz-score" id="quizScore" style="display: none;">
+                        Puntuación: <span id="scoreValue">0</span>/20
+                    </div>
+                    
+                    <div id="quizQuestions"></div>
+                    
+                    <div class="navigation" id="quizNavigation">
+                        <button class="nav-btn primary" onclick="startQuiz()">Iniciar Quiz 🚀</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Resultados del Quiz -->
+            <div id="quizResults" class="level-content">
+                <div class="level-header">
+                    <h2>🎯 Resultados del Quiz</h2>
+                    <p>Revisa tu desempeño y lo que has aprendido</p>
+                </div>
+                
+                <div class="quiz-container">
+                    <div class="results-summary">
+                        <h3 id="finalScore">Tu puntuación: 0/20</h3>
+                        <p id="performanceComment">¡Sigue aprendiendo!</p>
+                    </div>
+                    
+                    <div class="results-container" id="detailedResults"></div>
+                    
+                    <div class="navigation">
+                        <button class="nav-btn primary restart-btn" onclick="location.reload()">Reiniciar Aventura 🔄</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="./JS/main.js"></script>
 </body>
 </html>
