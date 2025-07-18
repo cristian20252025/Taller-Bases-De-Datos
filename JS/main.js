@@ -205,3 +205,54 @@ function showQuiz() {
     selectedElement.classList.add('selected');
     userAnswers[questionIndex] = optionIndex;
 }
+
+ // Función para enviar el quiz y mostrar resultados
+ function submitQuiz() {
+    if (Object.keys(userAnswers).length !== quizQuestions.length) {
+        alert("Por favor, responde todas las preguntas antes de enviar el quiz.");
+        return;
+    }
+
+    quizCompleted = true;
+    let score = 0;
+    
+    quizQuestions.forEach((question, index) => {
+        if (userAnswers[index] === question.correct) {
+            score++;
+        }
+    });
+    
+    quizScore = score;
+    
+    const detailedResults = document.getElementById('detailedResults');
+    detailedResults.innerHTML = '';
+    
+    quizQuestions.forEach((question, index) => {
+        const isCorrect = userAnswers[index] === question.correct;
+        const userAnswerText = userAnswers[index] !== undefined ? question.options[userAnswers[index]] : 'No respondida';
+        
+        const resultHTML = `
+            <div class="result-item ${isCorrect ? 'correct' : 'incorrect'}">
+                <div class="result-question">${index + 1}. ${question.question}</div>
+                <p><strong>Tu respuesta:</strong> ${userAnswerText}</p>
+                ${!isCorrect ? `<p><strong>Respuesta correcta:</strong> ${question.options[question.correct]}</p>` : ''}
+            </div>
+        `;
+        detailedResults.innerHTML += resultHTML;
+    });
+
+    document.getElementById('finalScore').textContent = `Tu puntuación: ${score}/${quizQuestions.length}`;
+    
+    const performanceComment = document.getElementById('performanceComment');
+    if (score === quizQuestions.length) {
+        performanceComment.textContent = "¡Excelente! Dominas los conceptos fundamentales de bases de datos.";
+    } else if (score >= quizQuestions.length * 0.7) {
+        performanceComment.textContent = "¡Buen trabajo! Tienes un buen entendimiento de las bases de datos.";
+    } else if (score >= quizQuestions.length * 0.5) {
+        performanceComment.textContent = "¡Sigue practicando! Tienes una base pero necesitas reforzar algunos conceptos.";
+    } else {
+        performanceComment.textContent = "¡Sigue aprendiendo! Repasa los niveles para fortalecer tus conocimientos.";
+    }
+    
+    showLevel('results');
+}
