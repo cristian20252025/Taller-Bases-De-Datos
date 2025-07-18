@@ -158,3 +158,39 @@ function completeLevel(level) {
 function showQuiz() {
     showLevel('quiz');
 }
+
+ // Función para iniciar el quiz
+ function startQuiz() {
+    quizStarted = true;
+    userAnswers = {}; // Reiniciar respuestas para un nuevo intento
+    
+    document.getElementById('quizNavigation').style.display = 'none';
+    document.getElementById('quizScore').style.display = 'block';
+    document.getElementById('scoreValue').textContent = '0';
+
+    const quizContainer = document.getElementById('quizQuestions');
+    quizContainer.innerHTML = '';
+    
+    quizQuestions.forEach((question, index) => {
+        const questionHTML = `
+            <div class="question-card" id="question-${index}">
+                <div class="question-number">Pregunta ${index + 1} de ${quizQuestions.length}</div>
+                <div class="question-text">${question.question}</div>
+                <div class="options">
+                    ${question.options.map((option, optionIndex) => `
+                        <div class="option" onclick="selectOption(this, ${index}, ${optionIndex})">
+                            ${option}
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+        `;
+        quizContainer.innerHTML += questionHTML;
+    });
+    
+    quizContainer.innerHTML += `
+        <div class="navigation">
+            <button class="nav-btn primary" onclick="submitQuiz()">Enviar Quiz ✅</button>
+        </div>
+    `;
+}
