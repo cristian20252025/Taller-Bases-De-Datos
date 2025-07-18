@@ -341,8 +341,15 @@ Se utilizó un tablero Scrum digital para gestionar tareas, priorizar historias 
 ---
 
 ## Conclusiones
-- Conclusiones generales del documento.  
-- Conclusiones de la reunión de retrospectiva del sprint.
+- La construcción de la aplicación web interactiva con cuestionario permitió diseñar un entorno educativo innovador, fácil de usar y adaptado a estudiantes sin conocimientos previos de bases de datos.
+
+- La estructura modular y el desbloqueo progresivo de módulos aseguraron un aprendizaje escalonado y más efectivo.
+
+- La incorporación de elementos dinámicos, retroalimentación inmediata y panel de progreso aumentó el interés y la motivación de los usuarios.
+
+- La metodología ágil utilizada facilitó la comunicación constante y la entrega continua de funcionalidades, mejorando la calidad y el cumplimiento de los objetivos del proyecto.
+
+- El trabajo colaborativo y la documentación constante permiten que el proyecto pueda ampliarse y mantenerse a futuro de forma sencilla.
 
 ---
 
