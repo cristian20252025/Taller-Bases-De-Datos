@@ -145,6 +145,48 @@
             </div>
 
 
+            <!-- Nivel 3: Estructura de una base de datos relacional -->
+            <div id="level3" class="level-content">
+                <div class="level-header">
+                    <h2>🟠 Nivel 3: Estructura de una Base de Datos Relacional</h2>
+                    <p>Conocer cómo se organizan los datos en una base de datos relacional</p>
+                </div>
+
+                <div class="concept-card">
+                    <h3>Tablas: La base de todo</h3>
+                    <p>Las tablas son <strong>estructuras con filas (registros) y columnas (campos o atributos)</strong>. Imagina una hoja de cálculo donde cada fila es una persona y cada columna es una característica como nombre, edad, etc.</p>
+                </div>
+
+                <div class="concept-card">
+                    <h3>Clave primaria (Primary Key)</h3>
+                    <p>Es un <strong>campo que identifica de forma única cada registro</strong>. Como el número de cédula de una persona: no puede haber dos personas con el mismo número.</p>
+                </div>
+
+                <div class="concept-card">
+                    <h3>Clave foránea (Foreign Key)</h3>
+                    <p>Es un <strong>campo que referencia una clave primaria en otra tabla</strong>. Es como tener la dirección de alguien para poder encontrarlo en otro lugar.</p>
+                </div>
+
+                <div class="concept-card">
+                    <h3>Relaciones entre tablas</h3>
+                    <ul class="concept-list">
+                        <li><strong>Uno a uno:</strong> Una persona tiene una cédula</li>
+                        <li><strong>Uno a muchos:</strong> Un cliente puede tener muchos pedidos</li>
+                        <li><strong>Muchos a muchos:</strong> Estudiantes pueden tomar muchas materias</li>
+                    </ul>
+                </div>
+
+                <div class="concept-card">
+                    <h3>Normalización</h3>
+                    <p>Es el <strong>proceso para evitar duplicación y asegurar consistencia</strong>. Es como organizar tu casa para que no tengas cosas repetidas en diferentes lugares.</p>
+                </div>
+
+                <div class="navigation">
+                    <button class="nav-btn secondary" onclick="showLevel(2)">⬅️ Nivel Anterior</button>
+                    <button class="nav-btn primary" onclick="completeLevel(3)">Completar Nivel 3 ✅</button>
+                </div>
+            </div>
+
     <script src="./JS/main.js"></script>
 </body>
 </html>
