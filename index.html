@@ -3,11 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kung Fu Rabbit</title>
+    <title>Aprende Bases de Datos - Aplicación Educativa</title>
     <link rel="stylesheet" href="/Styles/estilos.css">
 </head>
 <body>
-       
-        <script src="./JS/main.js"></script>
+    <div class="container">
+        <div class="header">
+            <h1>🗄️ Aprende Bases de Datos</h1>
+            <p>Una aventura interactiva para dominar los fundamentos de las bases de datos</p>
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+
+        <div class="level-selector">
+            <button class="level-btn level-1" onclick="showLevel(1)">🟢 Nivel 1</button>
+            <button class="level-btn level-2" onclick="showLevel(2)" disabled>🟡 Nivel 2</button>
+            <button class="level-btn level-3" onclick="showLevel(3)" disabled>🟠 Nivel 3</button>
+            <button class="level-btn level-4" onclick="showLevel(4)" disabled>🔵 Nivel 4</button>
+            <button class="level-btn quiz" onclick="showQuiz()" disabled>🎯 Quiz Final</button>
+        </div>
+
+        <div class="content-area">
+            <!-- Pantalla de Bienvenida -->
+            <div id="welcome" class="level-content active">
+                <div class="welcome-screen">
+                    <h2>¡Bienvenido al Mundo de las Bases de Datos!</h2>
+                    <p>Embárcate en un viaje educativo donde aprenderás desde los conceptos más básicos hasta los modelos más avanzados de bases de datos.</p>
+                    
+                    <div class="feature-grid">
+                        <div class="feature-card">
+                            <div class="icon">📚</div>
+                            <h3>Aprendizaje Progresivo</h3>
+                            <p>4 niveles estructurados que te llevarán desde lo básico hasta lo avanzado.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="icon">🎮</div>
+                            <h3>Interactivo y Dinámico</h3>
+                            <p>Experiencia gamificada con explicaciones claras y ejemplos prácticos.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="icon">🧠</div>
+                            <h3>Quiz Evaluativo</h3>
+                            <p>Pon a prueba tus conocimientos con 20 preguntas desafiantes.</p>
+                        </div>
+                    </div>
+                    
+                    <button class="start-btn" onclick="showLevel(1)">🚀 Comenzar Aventura</button>
+                </div>
+            </div>
+
+    <script src="./JS/main.js"></script>
 </body>
 </html>
