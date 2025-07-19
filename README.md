@@ -322,7 +322,7 @@ Se utilizó un tablero Scrum digital para gestionar tareas, priorizar historias 
 
 ## Evidencia de planteamiento de plataforma de trabajo
 - **Repositorio:** (https://github.com/cristian20252025/Taller-Bases-De-Datos)  
-- **Videos de reuniones:** (agregar links de sprint planning, daily stand up, retrospectiva).  
+- **Videos de reuniones:** (https://drive.google.com/file/d/16qpHXY2IQ5kS86xCHfk56EFrUYBcU1W7/view?usp=sharing).  
 - **Tablero Scrum:** (https://app.clickup.com/90131037410/v/l/7-90131037410-1)  
 - **Documentación:** Tecnologías usadas y cumplimiento de tareas planteadas.
 
