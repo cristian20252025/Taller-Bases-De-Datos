@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aprende Bases de Datos - Aplicación Educativa</title>
-    <link rel="stylesheet" href="/Styles/estilos.css">
+    <link rel="stylesheet" href="./Styles/estilos.css">
 </head>
 <body>
     <div class="container">
@@ -186,6 +186,98 @@
                     <button class="nav-btn primary" onclick="completeLevel(3)">Completar Nivel 3 ✅</button>
                 </div>
             </div>
+
+
+            <!-- Nivel 4: Modelo Entidad-Relación -->
+            <div id="level4" class="level-content">
+                <div class="level-header">
+                    <h2>🔵 Nivel 4: Modelo Entidad-Relación (E-R)</h2>
+                    <p>Entender cómo se modelan los datos antes de implementarlos</p>
+                </div>
+
+                <div class="concept-card">
+                    <h3>¿Qué es un Modelo E-R?</h3>
+                    <p>Es una <strong>representación gráfica de las entidades, sus atributos y relaciones</strong>. Es como hacer un plano de una casa antes de construirla.</p>
+                </div>
+
+                <div class="concept-card">
+                    <h3>Entidad</h3>
+                    <p>Es un <strong>objeto real o conceptual que se quiere modelar</strong>. Por ejemplo: Estudiante, Curso, Profesor, Libro.</p>
+                </div>
+
+                <div class="concept-card">
+                    <h3>Atributos</h3>
+                    <p>Son las <strong>características de una entidad</strong>. Para un Estudiante: nombre, edad, carrera, código estudiantil.</p>
+                </div>
+
+                <div class="concept-card">
+                    <h3>Relación</h3>
+                    <p>Define <strong>cómo se vinculan las entidades</strong>. Por ejemplo: un Estudiante "estudia" un Curso, un Profesor "enseña" una Materia.</p>
+                </div>
+
+                <div class="concept-card">
+                    <h3>Cardinalidad</h3>
+                    <p><strong>Indica cuántos elementos de una entidad se relacionan con cuántos de otra</strong>. Define si la relación es 1:1, 1:N, o N:M.</p>
+                </div>
+
+                <div class="concept-card">
+                    <h3>Diagrama E-R</h3>
+                    <p>Usa símbolos específicos:</p>
+                    <ul class="concept-list">
+                        <li><strong>Rectángulos:</strong> Para entidades</li>
+                        <li><strong>Elipses:</strong> Para atributos</li>
+                        <li><strong>Rombos:</strong> Para relaciones</li>
+                    </ul>
+                </div>
+
+                <div class="navigation">
+                    <button class="nav-btn secondary" onclick="showLevel(3)">⬅️ Nivel Anterior</button>
+                    <button class="nav-btn primary" onclick="completeLevel(4)">Completar Nivel 4 ✅</button>
+                </div>
+            </div>
+
+             <!-- Quiz Final -->
+             <div id="quiz" class="level-content">
+                <div class="level-header">
+                    <h2>🎯 Quiz Final: Evalúa tus Conocimientos</h2>
+                    <p>20 preguntas para demostrar todo lo que has aprendido</p>
+                </div>
+
+                <div class="quiz-container">
+                    <div class="quiz-score" id="quizScore" style="display: none;">
+                        Puntuación: <span id="scoreValue">0</span>/20
+                    </div>
+                    
+                    <div id="quizQuestions"></div>
+                    
+                    <div class="navigation" id="quizNavigation">
+                        <button class="nav-btn primary" onclick="startQuiz()">Iniciar Quiz 🚀</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Resultados del Quiz -->
+            <div id="quizResults" class="level-content">
+                <div class="level-header">
+                    <h2>🎯 Resultados del Quiz</h2>
+                    <p>Revisa tu desempeño y lo que has aprendido</p>
+                </div>
+                
+                <div class="quiz-container">
+                    <div class="results-summary">
+                        <h3 id="finalScore">Tu puntuación: 0/20</h3>
+                        <p id="performanceComment">¡Sigue aprendiendo!</p>
+                    </div>
+                    
+                    <div class="results-container" id="detailedResults"></div>
+                    
+                    <div class="navigation">
+                        <button class="nav-btn primary restart-btn" onclick="location.reload()">Reiniciar Aventura 🔄</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="./JS/main.js"></script>
 </body>
